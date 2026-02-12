@@ -1,12 +1,15 @@
+# deps / builds
 node_modules
 dist
 .firebase
 .DS_Store
 
+# env / secrets
 .env
 .env.local
 .env.*.local
 serviceAccountKey.json
 **/serviceAccountKey.json
 
+# keep local scripts/assets out of repo
 S2S-PK/
