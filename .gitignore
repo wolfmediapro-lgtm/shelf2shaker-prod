@@ -1,25 +1,12 @@
-# dependencies / builds
 node_modules
 dist
 .firebase
 .DS_Store
 
-# env / secrets
 .env
 .env.local
 .env.*.local
 serviceAccountKey.json
 **/serviceAccountKey.json
 
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# IDE
-.vscode
-.idea
-
-# project subfolder you don't want in app repo (optional)
-# If you want S2S-PK tracked, comment this out.
 S2S-PK/
