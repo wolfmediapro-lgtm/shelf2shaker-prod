@@ -1,51 +1,25 @@
-# === Shelf2Shaker Git Ignore File ===
-# Firebase & NodeJS / macOS Clean Config
+# dependencies / builds
+node_modules
+dist
+.firebase
+.DS_Store
 
-# Node dependencies
-node_modules/
+# env / secrets
+.env
+.env.local
+.env.*.local
+serviceAccountKey.json
+**/serviceAccountKey.json
+
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Firebase build and cache
-.firebase/
-.firebaserc~
-.firebase-debug.log*
-.cache/
-tmp/
+# IDE
+.vscode
+.idea
 
-# Local environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Build output
-dist/
-build/
-
-# IDE / editor files
-.vscode/
-.idea/
-
-# macOS system files
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon?
-._*
-
-# Logs
-*.log
-logs/
-debug.log
-
-# Optional backups
-*.bak
-*.tmp
-
-# OS Thumbnails
-ehthumbs.db
-Thumbs.db
-
+# project subfolder you don't want in app repo (optional)
+# If you want S2S-PK tracked, comment this out.
+S2S-PK/
