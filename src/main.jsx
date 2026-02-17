@@ -10,6 +10,9 @@ import AddCocktail from "./components/AddCocktail.jsx";
 import CocktailDetail from "./pages/CocktailDetail.jsx";
 import GarnishDetail from "./pages/GarnishDetail.jsx";
 import CocktailsByGarnish from "./pages/CocktailsByGarnish.jsx";
+import About from "./pages/About.jsx";
+import Faq from "./pages/Faq.jsx";
+import Support from "./pages/Support.jsx";
 
 function App() {
   return (
@@ -19,7 +22,11 @@ function App() {
           <Route path="/" element={<CocktailList />} />
           <Route path="/cocktail/:id" element={<CocktailDetail />} />
           <Route path="/add" element={<AddCocktail />} />
-        </Route>
+        
+          <Route path="/about" element={<About />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/support" element={<Support />} />
+</Route>
 
         <Route path="/garnishes/:id" element={<GarnishDetail />} />
         <Route path="/garnishes/:id/cocktails" element={<CocktailsByGarnish />} />
